@@ -5,6 +5,18 @@ header { background: #273246; color: white; padding: 10px; text-align: center; p
 
 .message-area { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
 
+.info {
+    font-size: 10px;
+    color: #555;
+    margin-top: 5px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+.received .info { justify-content: flex-start; }
+.status { color: #eef1f6; font-weight: bold; }
+.sent .status { color: #273246; } /* 送信側で見える既読/未読の色 */
+
 /* 吹き出しのスタイル */
 .msg { max-width: 70%; padding: 10px; border-radius: 15px; font-size: 14px; line-height: 1.4; position: relative; }
 .msg.received { background: white; align-self: flex-start; border-bottom-left-radius: 2px; }
